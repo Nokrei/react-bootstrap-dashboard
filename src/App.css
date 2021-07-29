@@ -1,38 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+p,
+h2,
+h4 {
+  margin: 0;
+}
+body {
+  background: #e5e5e5;
+}
 .App {
+  font-family: "Rubik", sans-serif;
+  background: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.sidebar {
+  background: #f4f5fa;
+  padding: 32px 0 52px 0;
+}
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  color: #8595a8;
+  font-size: 24px;
+}
+.sidebar li:not(:last-of-type) {
+  padding-bottom: 50px;
+}
+.sidebar img {
+  border-radius: 100%;
+}
+.logo-wrap {
+  padding-bottom: 94px;
+}
+.avatar-side-wrap {
+  padding-top: 296px;
+}
+.topbar {
+  padding: 32px 0 55px 25px;
+}
+.input-wrap {
+  background: rgba(255, 255, 255, 0.31);
+  border: 1px solid #e1e7fc;
+  border-radius: 30px;
+  padding: 5px 5px 5px 15px;
+  font-size: 18px;
+  color: #8291a9;
+}
+.topbar input {
+  border: none;
+  margin-left: 16px;
+}
+.topbar-right img {
+  border-radius: 100%;
+}
+.topbar-right span {
+  font-family: "Poppins", sans-serif;
+  padding: 0 41px 0 15px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #273144;
+}
+::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: #d8d8d8;
+}
+.content {
+  padding-left: 25px;
+}
+.content h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  padding-bottom: 25px;
+}
+.dashboard-card {
+  display: grid;
+  justify-items: center;
+  padding: 24px 0px 40px 0px;
+  max-width: 230px;
+}
+.dashboard-card div {
+  position: relative;
+  max-width: 90px;
+  height: 90px;
+}
+.dashboard-card div :first-child {
+  max-width: 80px;
+  height: auto;
+  border-radius: 100%;
+}
+.dashboard-card div :last-child {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+.card-name {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+.card-job {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #7e858e;
+  padding-bottom: 16px;
+}
+.dashboard-card button {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  background: #ffffff;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+}
+.card-big {
+  padding: 66px 61px 72px 61px;
+  position: relative;
+  box-shadow: -1px 2px 14px -1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: -1px 2px 14px -1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -1px 2px 14px -1px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  max-width: 430px;
+  margin-top: 47px;
+}
+.card-big-top {
+  width: auto;
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  font-size: 24px;
+  color: #7e858e;
+}
+.card-big-mid img {
+  border-radius: 100%;
+}
+.card-big-mid p:first-of-type {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #171f46;
+}
+.card-big-mid p:last-of-type {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #7e858e;
+}
+.card-big-bottom {
+  padding-top: 41px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-big-bottom p:first-of-type {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #171f46;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-big-bottom p:last-of-type {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #7e858e;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.side-border {
+  border-left: 1px solid #989eb2;
+  border-right: 1px solid #989eb2;
 }
-
-.App-link {
-  color: #61dafb;
+.team {
+  margin-top: 47px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.team img {
+  border-radius: 100%;
+}
+.team-member {
+  padding-top: 23px;
+}
+.team h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #171f46;
+}
+.member-mid p:first-of-type {
+  font-size: 16px;
+  line-height: 16px;
+  color: #171f46;
+}
+.member-mid p:last-of-type {
+  font-size: 14px;
+  line-height: 16px;
+  color: #7e858e;
+  padding-top: 5px;
+}
+.member-right {
+  font-size: 12px;
+  line-height: 16px;
+  color: #7e858e;
+}
+.bottom-border {
+  border-bottom: 1px solid #e0e0e0;
+}
+.content-right h4 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #171f46;
+  padding-bottom: 15px;
+}
+.content-right img:first-of-type {
+  margin-bottom: 18px;
+}
+.content-right p:first-of-type {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #2a61b6;
+}
+.calendar-item {
+  border: 1px solid #e1e7fc;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin-bottom: 22px;
+  padding: 27px 0;
+}
+.calendar-item-left {
+  box-shadow: 3px 1px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  text-align: center;
+  padding: 18px 0;
+}
+.calendar-item-left p:first-of-type {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #171f46;
+}
+.calendar-item-left p:last-of-type {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #858c95;
+}
+.calendar-item-mid {
+  padding-top: 18px;
+}
+.calendar-item-mid p:first-of-type {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #171f46;
+}
+.calendar-item-mid p:last-of-type {
+  font-size: 14px;
+  line-height: 16px;
+  color: #7e858e;
+}
+.calendar-item-right {
+  color: #e1e7fc;
 }
